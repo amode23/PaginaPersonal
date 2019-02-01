@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+
+margin:0px;
+padding:0px;
+font-family:"Times New Roman", Helvetica, sans-serif;
+
+	
+}
+
+
+#contenedor{
+
+ border: 1px solid #5f5f5f;
+
+    margin-left:auto; 
+	margin-right:auto; 
+	width:95%;
+    padding: 1%;        
+	
+}
+
+
+header {
+	margin-bottom:10px;
+	width:100%;
+    height: 70%;
+	background-color:#778899;
+	overflow: hidden; /*el contenido se adapte a su tamaño*/
+
+	
+	
+}
+
+section{
+	overflow:hidden;
+}
+section{
+	
+	 background-image: url("../imagenes/fondo1.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+
+section p{
+	text-align:center;
+	padding-top:10%;
+	padding-right:10%;
+	padding-left:10%;
+	color:black;
+}
+
+section img{
+	
+	width:20%;
+	float:right;
+}
+
+
+
+footer {
+
+	margin-top:10px;
+    clear: both; /*Es importante aplicar la regla clear:both, */             
+    width: 100%; 
+    height: 50%;
+	overflow: hidden; 
+	
+    background-color: #778899;
+    
+}
+
+p.pie{
+	
+	padding-top:3%;
+	padding-bottom:5%;
+	text-align:center;
+}
+
+
+/*Estilos para el menu de las redes sociales*/
+
+
+
+
+
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    padding: 20px;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columna {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+.fakeimg {
+    background-color: #aaa;
+    width: 93%;
+	margin-left:3%;
+	margin-right:10%;
+	padding:3%;
+}
+
+.side h2{
+	margin-left:3%;
+}
+	
+
+
+/*Estilo para la imagen del logo*/
+header .logo img{
+width: 40%;
+float: left;
+margin-left:1%;
+margin-top:1%;
+margin-bottom:1%;
+}
+
+/*Estilo para el número de telefono*/
+footer h3{
+   
+font-family:"Times New Roman", Helvetica, sans-serif;
+ margin-top:1%;
+ margin-right:4%;
+ text-align:right;
+
+
+}
+/*Estilo para el titulo PAGINA PERSONAL*/
+header h2{
+
+font-family:"Algerian", Helvetica, sans-serif;
+ float:left;
+ margin-top:3%;
+ margin-left:5%;
+
+ 
+}
+
+
+
+/*Estilo para la foto de home.html*/
+.foto img{
+	max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+/*Estilo mediante grid-layout para el portfolio.html*/
+.galeria {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/*Estilo para la foto de home.html*/
+.foto {
+ 
+  padding: 10px;
+  margin-left: 10%;
+ 
+}
+
+/*------portfolio------ */
+
+.projects-holder .col-lg-6, .projects-holder .col-lg-6 {
+	padding-right: 1%; padding-left: 1%;
+	}
+.project-item {
+	width: 93%; margin-bottom:4%; margin-top:4%; margin-left:4%; overflow: hidden; position: relative;
+	}
+.project-item img {
+	width: 100%; 
+	}
+.project-item:hover .project-hover {
+	top: 0; opacity: 1; visibility: visible;
+	}
+.project-hover {
+	position: absolute; width: 100%; height: 100%; top: 40px; left: 0; background:  #5f5f5f; opacity: 0; visibility: 0; -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear; -ms-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear;
+  }
+.project-hover .inside {
+	width: 90%; left: 0; bottom: 0; padding: 30px;
+	}
+.project-hover h5 {
+	font-size: 25px;
+	}
+.project-hover h5 a {
+	color: white;
+	}
+.project-hover p {
+	color: white; 
+	}
+	
+	
+	
+/******************************************************mediaqueries*****************************************************************************/
+
+
+ @media screen and (max-width: 1161px) {
+   
+	header h2 {
+		display: none;
+	}
+	.logo{
+		display:none;
+		
+	}
+	
+	.navbar{
+	
+	background-color: #dfdfdf;
+	margin-bottom:1%;
+	margin-top:1%;
+	margin-left:1%;
+	margin-right:1%;
+	
+    }
+	@media screen and (max-width: 960px) {
+    .row {   
+        flex-direction: column;
+	}
+	footer h3{
+font-size:20px;
+
+
+}
+
+.project-hover p {
+	margin-top:-10px;
+	font-size:15px; 
+	}
+	}
+	@media screen and (max-width: 950px) {
+	.columna {   
+        flex-direction: column;
+}
+	}
+ }
+ @media screen and (min-width: 1161px) {
+.navbar{
+	margin-top:1%;
+	margin-right:1%;
+	float:right;
+	background-color: #dfdfdf;
+	margin-bottom:1%;
+	position:relative;
+		}
+}
+
+.nav-link{
+	
+	color:black!important;
+	
+}
+
+.navbar-brand {
+    color:black!important;
+}
+.nav-link:hover {
+    color: black!important;
+}
+
+.portfolioti{
+	
+	margin-top:3%;
+	margin-left:5%;
+	
+}
+#botonarriba{
+	margin-left:2%;
+}
